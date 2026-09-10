@@ -1,0 +1,381 @@
+/* ======================================
+   PROFESSIONAL RESUME — A4
+   Theme: Modern Navy + Slate
+   ====================================== */
+
+:root {
+  --navy: #172B4D;
+  --blue: #2F5D8C;
+  --blue-light: #F3F6FA;
+  --border: #D8E0E8;
+  --paper: #FFFFFF;
+  --ink: #263238;
+  --muted: #667085;
+  --page-bg: #E9EDF2;
+}
+
+/* ---------- Global ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px 16px;
+  background: var(--page-bg);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+/* ---------- Resume Page ---------- */
+
+.page {
+  max-width: 794px;
+  min-height: 1123px;
+  margin: 0 auto;
+  background: var(--paper);
+  padding: 42px 48px 48px;
+  box-shadow: 0 5px 20px rgba(23, 43, 77, 0.12);
+}
+
+/* ---------- Header ---------- */
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 2px solid var(--navy);
+
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.header-text h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: var(--navy);
+  margin: 0 0 6px 0;
+  font-weight: 700;
+}
+
+.full-name {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--ink);
+}
+
+.full-name span {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+/* ---------- Photo ---------- */
+
+.photo-frame {
+  width: 125px;
+  height: 125px;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  border: 3px solid var(--navy);
+
+  box-shadow: 0 2px 8px rgba(23, 43, 77, 0.15);
+
+  flex-shrink: 0;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- Sections ---------- */
+
+.section {
+  margin-bottom: 22px;
+}
+
+.section-title {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  color: var(--navy);
+
+  background: transparent;
+
+  padding: 0 0 7px 0;
+
+  border-bottom: 2px solid var(--border);
+
+  border-radius: 0;
+
+  margin: 0 0 12px 0;
+
+  letter-spacing: 0.8px;
+}
+
+/* ---------- Two Column ---------- */
+
+.two-col {
+  display: flex;
+  gap: 28px;
+}
+
+.two-col .col {
+  flex: 1;
+}
+
+/* ---------- Personal Details ---------- */
+
+.details-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.details-table th,
+.details-table td {
+  border: none;
+  border-bottom: 1px solid var(--border);
+
+  padding: 7px 8px;
+
+  text-align: left;
+}
+
+.details-table th {
+  width: 25%;
+
+  background: transparent;
+
+  color: var(--navy);
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+.details-table td {
+  width: 25%;
+  color: var(--ink);
+}
+
+/* ---------- Objective ---------- */
+
+.objective,
+.declaration {
+  margin: 0;
+
+  padding: 12px 14px;
+
+  background: var(--blue-light);
+
+  border-left: 3px solid var(--blue);
+
+  border-radius: 2px;
+
+  font-size: 14px;
+
+  color: var(--ink);
+}
+
+/* ---------- Education ---------- */
+
+.edu-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+.edu-table thead th {
+  background: var(--navy);
+
+  color: var(--paper);
+
+  padding: 9px 12px;
+
+  text-align: left;
+
+  font-weight: 600;
+}
+
+.edu-table tbody td {
+  border: 1px solid var(--border);
+
+  padding: 8px 12px;
+}
+
+.edu-table tbody tr:nth-child(even) {
+  background: var(--blue-light);
+}
+
+/* ---------- Skills ---------- */
+
+.tag-list,
+.strengths-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 6px 10px;
+
+  margin-bottom: 7px;
+
+  background: var(--blue-light);
+
+  border-left: 3px solid var(--blue);
+
+  border-radius: 2px;
+
+  font-size: 13.5px;
+}
+
+.strengths-list li {
+  padding: 5px 0 5px 20px;
+
+  position: relative;
+
+  font-size: 14px;
+}
+
+.strengths-list li::before {
+  content: "✓";
+
+  position: absolute;
+  left: 0;
+
+  color: var(--blue);
+
+  font-weight: 700;
+}
+
+/* ---------- Signature ---------- */
+
+.signature-block {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  margin-top: 30px;
+
+  padding-top: 16px;
+
+  border-top: 1px solid var(--border);
+}
+
+.place-date p {
+  margin: 3px 0;
+  font-size: 13.5px;
+}
+
+.signature {
+  text-align: center;
+}
+
+.sign-line {
+  width: 170px;
+
+  border-bottom: 1px solid var(--ink);
+
+  margin-bottom: 5px;
+}
+
+.sign-label {
+  margin: 0;
+
+  font-size: 12px;
+
+  color: var(--muted);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 700px) {
+
+  body {
+    padding: 15px 8px;
+  }
+
+  .page {
+    padding: 28px 20px 32px;
+  }
+
+  .page-header {
+    flex-direction: column-reverse;
+
+    text-align: center;
+
+    gap: 15px;
+  }
+
+  .two-col {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .details-table th,
+  .details-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .details-table tr {
+    display: block;
+
+    border-bottom: 1px solid var(--border);
+  }
+
+  .edu-table {
+    font-size: 12px;
+  }
+
+  .signature-block {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+}
+
+/* ---------- Print ---------- */
+
+@media print {
+
+  body {
+    background: white;
+    padding: 0;
+  }
+
+  .page {
+    box-shadow: none;
+    max-width: 100%;
+    min-height: auto;
+
+    padding: 20px 30px;
+  }
+
+  .section-title {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .edu-table thead th {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
